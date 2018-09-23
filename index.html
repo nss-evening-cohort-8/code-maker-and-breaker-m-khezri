@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><Code></Code></title>
+    <title>Converter</title>
 </head>
 <body>
     
-    <form>
-        <input type="text" id="encodeText">
-        <button id="ToSecretBTN">Convert to secret</button>
-    </form>
+    <div id="encode-section">
+        <label for="encode-input">Enter your text:</label>
+        <input type="text" name="encode-input" id="encode-input">
+        <button id="encode-btn">Convert to Secret</button>
+    </div>
 
-    <div id="encodeResult"></div>
+    <div id="encode-output"></div>
 
-    <form>
-            <input type="text" id="decodeText">
-            <button id="ToTextBTN">Convert to text</button>
-    </form>
-    
-    <div id="decodeResult"></div>
+    <hr>
+    <div id="decode-section">
+        <label for="encode-input">Enter secret digits:</label>
+        <input type="text" name="decode-input" id="decode-input">
+        <button id="decode-btn">Convert to Words!</button>
+    </div>
+    <div id="decode-output"></div>
 
 
     <script src="main.js"></script>
